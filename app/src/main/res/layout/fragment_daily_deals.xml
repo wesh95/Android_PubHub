@@ -1,0 +1,21 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.weissenberger.pubhub.DailyDealsFrag">
+
+    <fragment
+        android:id="@+id/fragment"
+        android:name="com.example.weissenberger.pubhub.SortSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/deal_listview"
+        >
+    </ListView>
+
+</LinearLayout>

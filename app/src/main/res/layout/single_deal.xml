@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="30dp">
+
+                    <TextView
+                        android:id="@+id/deal_title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="$3.00 Long Island"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/deal_time_active"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5dp"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:text="Available: 6:00 - 9:00 pm"
+                        android:textAlignment="textEnd" />
+                </TableRow>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:orientation="horizontal">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/deal_image"
+                        android:padding="2dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/pub_hub_logo_large" />
+
+                </TableRow>
+            </LinearLayout>
+
+            <TableRow android:layout_margin="4dp">
+
+                <TextView
+                    android:id="@+id/bar_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="5"
+                    android:text="Sharkies"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="25dp" />
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="5">
+
+                    <TableRow
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/bar_wait_time"
+                            android:text="Wait Time: 30 minutes"
+                            android:textSize="12dp"/>
+                    </TableRow>
+
+                    <TableRow
+                        android:gravity="right">
+
+                        <TextView
+                            android:id="@+id/bar_cover"
+                            android:text="Cover: $0"
+                            android:textSize="12dp" />
+                    </TableRow>
+                </TableLayout>
+            </TableRow>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical">
+
+            </LinearLayout>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
